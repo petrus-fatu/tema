@@ -54,3 +54,11 @@ Assuming they did, do the following to ingest logs:
 1. Modify the logstash configuration found in docker-compose/logstash/pipeline/logstash.conf to add the data sources. Reference on how to do so found [here](https://www.elastic.co/guide/en/logstash/current/logstash-config-for-filebeat-modules.html#parsing-nginx).
 2. go to the docker-elk directory and run **docker-compose restart**.
 3. Access Kibana, go to Management, and start adding index patterns. More info on that [here](https://www.elastic.co/guide/en/kibana/current/index-patterns.html).
+
+## References
+
+Docker ELK stack code obtained and modified from here:
+
+[https://github.com/deviantony/docker-elk](https://github.com/deviantony/docker-elk)
+
+Acknowledgement and credit for its creation to [Anthony Lapenna](https://github.com/deviantony)
