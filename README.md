@@ -40,7 +40,7 @@ End with an example of getting some data out of the system or using it for a lit
 
 ### Load-balanced applications
 
-You can now access [http://127.0.0.1](http://127.0.0.1) in order to access the load balancer. Refresh several times, and you'll see it switches between serving the node, java and python apps in turn.
+You can now access [http://127.0.0.1](http://127.0.0.1) in order to access the load balancer. Refresh several times, and you'll see it switches between serving the node, java and python apps in turn. Note: the java application may require a few seconds before it goes online.
 
 
 ### ELK stack
