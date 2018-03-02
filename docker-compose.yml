@@ -1,0 +1,41 @@
+version: '2'
+
+services:
+ proxy:
+    build:
+      context:  ./nginxproxy
+      dockerfile: Dockerfile
+    ports:
+        - "80:80"
+    links:
+        - node
+        - python
+        - java
+
+ node:
+    image: node:4
+    volumes:
+        - ./apps/node:/usr/src/app
+        - /var/log/container/node:/var/log
+    working_dir: /usr/src/app
+    expose:
+        - "8000"
+    command: "node server.js"
+
+ python:
+    image: python:latest
+    volumes:
+        - ./apps/python:/var/www/html
+        - /var/log/container/python:/var/log
+    working_dir: /var/www/html
+    expose:
+        - "50002"
+    command: "python3 -m http.server 50002"
+
+ java:
+    build:
+      context:  ./apps/java
+      dockerfile: Dockerfile
+    volumes:
+        - /var/log/container/java:/var/log
+
