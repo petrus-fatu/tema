@@ -22,7 +22,7 @@ The last 2 are installed automatically by the script. If you're not using that, 
 Use the following command to get the source code.
 
 ```
-git clone (adresa)
+git clone https://github.com/Andrei-Safta/tema.git
 ```
 
 If you're running a red-hat/centos based linux distro, simply run **./install.sh** to get the containers up and running. Otherwise follow the steps below:
