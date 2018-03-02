@@ -33,8 +33,6 @@ If you're running a red-hat/centos based linux distro, simply run **./install.sh
 3. From the project directory, run **docker-compose -p tema up -d** in order to start the applications
 4. Run *cd docker-elk* and then **docker-compose up -d** to start the ELK stack for monitoring
 
-End with an example of getting some data out of the system or using it for a little demo
-
 ## Running the apps
 
 
